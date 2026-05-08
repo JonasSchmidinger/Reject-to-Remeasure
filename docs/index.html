@@ -11,7 +11,7 @@
 
 <meta name="author" content="Jonas Schmidinger" />
 
-<meta name="date" content="2026-04-29" />
+<meta name="date" content="2026-05-08" />
 
 <title>Reject-to-Remeasure: An R tutorial</title>
 
@@ -440,7 +440,7 @@ display: none;
 
 <h1 class="title toc-ignore">Reject-to-Remeasure: An R tutorial</h1>
 <h4 class="author">Jonas Schmidinger</h4>
-<h4 class="date">2026-04-29</h4>
+<h4 class="date">2026-05-08</h4>
 
 </div>
 
@@ -449,10 +449,10 @@ display: none;
 <h1>Background</h1>
 <p>This R tutorial illustrates the concept of “Reject-to-Remeasure”
 through simple code implementations. It accompanies the paper
-“Reject-to-remeasure: Uncertainty-guided risk control for reliable soil
-spectroscopy.” To recap, the aim is to predict soil properties (here,
-clay in g kg⁻¹) from visible near-infrared spectroscopy (VNIRS). While
-VNIRS predictions cost only a fraction of conventional laboratory
+“Reject-to-remeasure: Uncertainty-guided quality control for reliable
+soil spectroscopy.” To recap, the aim is to predict soil properties
+(here, clay in g kg⁻¹) from visible near-infrared spectroscopy (VNIRS).
+While VNIRS predictions cost only a fraction of conventional laboratory
 measurements, the quality of these predictions can vary drastically
 between samples, depending on how well the soil is represented in the
 training library. Using probabilistic modelling, we can quantify the
@@ -1244,7 +1244,6 @@ eval_df &lt;- pred_ID_Al %&gt;%
     is_wrong    = error &gt; delta
   ) %&gt;%
   
-  # ✅ SAME AS CLAY (CRITICAL FIX)
   mutate(
     outcome = case_when(
       is_accepted &amp; !is_wrong ~ &quot;Correct Acceptance&quot;,
@@ -1276,7 +1275,6 @@ Al_Rejector_1to1 &lt;- ggplot(
   geom_abline(intercept = delta, slope = 1, linetype = &quot;dotted&quot;) +
   geom_abline(intercept = -delta, slope = 1, linetype = &quot;dotted&quot;) +
 
-  # ✅ SAME colour mapping as Clay
   scale_colour_manual(
     values = c(
       &quot;Correct Acceptance&quot;   = &quot;#1F4E79&quot;,
@@ -1286,7 +1284,6 @@ Al_Rejector_1to1 &lt;- ggplot(
     )
   ) +
 
-  # ✅ SAME shape mapping as Clay
   scale_shape_manual(
     values = c(
       &quot;Correct Acceptance&quot;   = 16,
@@ -1342,8 +1339,8 @@ Al_Rejector_1to1</code></pre>
 colleagues through LinkedIN.</p>
 <p>You can find more information about our work in:</p>
 <p>Schmidinger, J., Gebbers R., Gasser M.-O., Barkov, V., Wu, G.M.,
-&amp; Adamchuk, V. (2026): Reject-to-remeasure: Uncertainty-guided risk
-control for reliable soil spectroscopy</p>
+&amp; Adamchuk, V. (2026): Reject-to-remeasure: Uncertainty-guided
+quality control for reliable soil spectroscopy</p>
 </div>
 
 
