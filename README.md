@@ -1,5 +1,5 @@
 # Reject-to-Remeasure Rep
-This repository is associated to the paper "Reject-to-Remeasure: Uncertainty-Guided Quality Control for Reliable Soil Spectroscopy".
+This repository is associated to the paper "Rejections Based on Predictive Uncertainty Enable Reliable Routine Soil Spectroscopy".
 
 # Structure
 0_Descriptive_Analysis -> Contain the R-scripts to plot dataset properties.
