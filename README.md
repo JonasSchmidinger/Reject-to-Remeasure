@@ -10,7 +10,7 @@ This repository is associated to the paper "Rejections Based on Predictive Uncer
 
 3_Analyse -> Contain the R-scripts to analyse the results.
 
-Data -> Contain folds, hyperparameter search space and in the future the dataset. At the moment "Full_Dataset.csv" contains only the spectral data and shows the dataset structure. However, soil data publication is currently prepapred. 
+Data -> Contain folds, hyperparameter search space and in the future the dataset. At the moment "Full_Dataset.csv" contains only the spectral data and displays the dataset structure. However, reference soil data is currently prepapred for a seperate dataset publication. 
 
 Figures -> Contain created Figures by R and Python-scripts.
 
