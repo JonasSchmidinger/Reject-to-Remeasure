@@ -126,7 +126,6 @@ compute_p_exceed_hybrid <- function(quantile_matrix,
 
     y_hat <- as.numeric(pred_values[i, 1])
 
-    #Need different criteria not based on y_hat but on Y, as changes along Y will also change the threshold (as compared to absolute threshold with fixed threshold widths)
     L <- (y_hat - a) / (1 + b)
     U <- (y_hat + a) / (1 - b)
 
@@ -152,7 +151,7 @@ Clay_threshold_alpha <- 0.05
 
 
 Clay_p_value <- compute_p_exceed_hybrid(
-  quantile_matrix = Clay_pred_quantiles * 10,
+  quantile_matrix = Clay_pred_quantiles * 10, # *10 because of changing from % to g kg^-1
   pred_values     = data.frame(pred = Clay_pred$Clay_pred * 10),
   a               = Clay_abs_buffer,
   b               = Clay_rel_factor,
