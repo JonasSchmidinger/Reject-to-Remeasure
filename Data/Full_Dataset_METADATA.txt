@@ -1,0 +1,58 @@
+This is a preliminary data release containing soil reference data and visible-near-infrared spectral data from all 793 soil samples at 272 sampling locations. This data release is meant to ensure reproducibility. Another data publication with additional metadata and soil properties will be soon released (expected by October 2026). Please contact Marc-Olivier Gasser (marc-o.gasser@irda.qc.ca) or Jonas Schmidinger (jonas.schmidinger@uni-osnabrueck.de) in case you want to use the dataset, as we can provide additional reference soil properties.
+
+
+# Column description of IDs
+
+ID: Unique ID for each sample
+ID_Location: Unique ID for each sampling location
+Depth_ID: ID for soil horizon where: Ap1 - Topsoil from 0 - 10 cm; Ap2 - Topsoil below 17 cm, B - First 15 cm of subsoil
+
+
+# Column description of soil properties
+
+Variable: Total_C
+ Unit: % (gravimetric)
+ Method: Dry combustion using LECO CN828 analyser on 100-µm sample
+ Description: Total carbon 
+
+Variable: SOM
+ Unit: % (gravimetric)
+ Method: Loss-on-ignition (150°C and 375°C)
+ Description: Soil organic matter 
+
+Variable: Sand
+ Unit: % (gravimetric)
+ Method: Modified Bouyoucos hydrometer method 
+ Description: Particle size fraction with diameter between 50 µm and 2 mm
+
+Variable: Clay
+ Unit: % (gravimetric)
+ Method: Modified Bouyoucos hydrometer method 
+ Description: Particle size fraction with diameter <2 µm
+
+Variable: pH_SMP
+ Unit: Dimensionless
+ Method: glass electrode in Shoemaker–McLean–Pratt buffer solution 
+ Description: Soil pH measured in Shoemaker–McLean–Pratt
+
+Variable: P_Meh3
+ Unit: mg kg^-1
+ Method: Mehlich-3 extraction with inductively coupled plasma spectrometry
+ Description: Soil extractable phosphorus 
+
+Variable: K_Meh3
+ Unit: mg kg^-1
+ Method: Mehlich-3 extraction with inductively coupled plasma spectrometry
+ Description: Soil extractable potassium 
+
+Variable: Al_Meh3
+ Unit: mg kg^-1
+ Method: Mehlich-3 extraction with inductively coupled plasma spectrometry
+ Description: Soil extractable aluminium 
+
+# Column description of Spectra
+
+Variable: wl_350, wl_351, wl_352, ..., wl_2500
+ Unit: % of reflectance
+ Method: ASD LabSpec4 Standard-Res (Malvern Panalytical Ltd., USA)
+ Description: Raw spectra of reflectance values from wavelength (wl) range of 350-2,500 nm
