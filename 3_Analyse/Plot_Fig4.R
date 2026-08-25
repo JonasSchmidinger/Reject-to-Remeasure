@@ -251,7 +251,7 @@ Clay_economic_cost_plot
 #----------------------------------------------------------------------------------------------------------------
 # SOM
 
-SOM_abs_buffer      <- 3
+SOM_abs_buffer      <- 2.5
 SOM_rel_factor      <- 0.3
 SOM_threshold_alpha <- 0.05
 
@@ -388,7 +388,7 @@ SOM_economic_cost_plot <-ggplot(
     text = element_text(family = "Arial"),
     axis.text = element_text(size = 14, colour = "black"),
     axis.title = element_blank(),
-    legend.position = c(-0.63, 1.07),
+    legend.position = c(-0.58, 1.07),
     legend.justification = c(0, 0),
     plot.margin = margin(t = 85, r = 10, b = 10, l = 10),
     legend.direction = "horizontal",
