@@ -478,7 +478,7 @@ Clay_Rejector_1to1
 
 
 
-SOM_abs_buffer  <- 3
+SOM_abs_buffer  <- 2.5
 SOM_rel_factor  <- 0.3
 SOM_threshold_alpha <- 0.05
 
