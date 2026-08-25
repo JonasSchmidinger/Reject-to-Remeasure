@@ -795,7 +795,7 @@ SOM_Rejector_1to1 <- ggplot(
     y = Inf,
     label = expression(
       italic("δ") * "(" * italic(Y) * ")" ==
-        3 + 0.3 * italic(Y)
+        2.5 + 0.3 * italic(Y)
     ),
     parse = TRUE,
     hjust = -0.7,
